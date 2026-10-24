@@ -16,7 +16,7 @@ var siteConfig = {
   },
   hero: {
     title: "ابدأ رحلتك في *البرمجة* مع *Yalla Coding*",
-    text: "كورسات برمجة للأطفال والمراهقين، وكورسات لطلاب الثانوي، بأسلوب بسيط وممتع.",
+    text: "كورسات برمجة لجميع الأعمار، بأسلوب بسيط وممتع.",
     button: "استكشف الكورسات",
     image: "images/hero.png", 
     tagline: "From User To *Creator*"
@@ -31,28 +31,15 @@ var siteConfig = {
 /* كل عنصر: id (فريد) + title، واختياري: subtitle, badge, image, button
    وإما children (مستوى جواه) أو link (لينك PDF/شيت/فورم). theme:"dark" لخلفية كحلي */
 var coursesData = { courses: [
-  { id: "bac", title: "كورسات بكالوريا", subtitle: "أولى وتانية ثانوي", image: "images/bac.jpg", children: [
-    { id: "sec1", title: "أولى ثانوي", badge: "الصف الأول الثانوي", image: "images/sec1.jpg", children: [
-      { id: "w1", title: "الأسبوع 1", button: "فتح", link: "" },
-      { id: "w2", title: "الأسبوع 2", button: "فتح", link: "" }
-    ]},
-    { id: "sec2", title: "تانية ثانوي", badge: "الصف الثاني الثانوي", image: "images/sec2.jpg", children: [
-      { id: "theory", title: "نظري", children: [
-        { id: "ai", title: "AI", children: [ { id: "ai1", title: "Sheet 1", button: "فتح", link: "" } ] },
-        { id: "cyber", title: "Cybersecurity", children: [ { id: "cy1", title: "Sheet 1", button: "فتح", link: "" } ] },
-        { id: "web", title: "Web Development", children: [ { id: "wd1", title: "Sheet 1", button: "فتح", link: "" } ] }
-      ]},
-      { id: "practical", title: "عملي", children: [ { id: "p1", title: "مشروع 1", button: "فتح", link: "" } ] }
-    ]}
-  ]},
+  
   { id: "prog", title: "كورسات البرمجة", subtitle: "من 6 سنوات لحد 13+", image: "images/prog.jpg", theme: "dark", children: [
     { id: "a69", title: "المبرمج الصغير", badge: "من 6 إلى 9 سنوات", subtitle: "نتعلم أساسيات البرمجة وصناعة الألعاب والقصص", image: "images/age-6-9.jpg", children: [
       { id: "sc1", title: "Scratch Level 1", badge: "المستوى 1", image: "images/scratch-1.jpg", link: "https://drive.google.com/file/d/1ibyho5NKfq26TQ-lk5nePQPgliWlDf2o/view?usp=sharing" },
       { id: "sc2", title: "Scratch Level 2", badge: "المستوى 2", image: "images/scratch-2.jpg", link: "https://drive.google.com/file/d/1HL07GXFz8cyVQzfajNwQ9jprJ5EWAU1N/view?usp=sharing" }
     ]},
     { id: "a1012", title: "المبرمج المبدع", badge: "من 10 إلى 12 سنة", subtitle: "نبني مشاريع تفاعلية بالبلوكات", image: "images/age-10-12.jpg", children: [
-      { id: "pb1", title: "Pictoblox Level 1", badge: "المستوى 1", image: "images/pictoblox-1.jpg", link: "" },
-      { id: "pb2", title: "Pictoblox Level 2", badge: "المستوى 2", image: "images/pictoblox-2.jpg", link: "" }
+      { id: "pb1", title: "Pictoblox Level 1", badge: "المستوى 1", image: "images/pictoblox-1.jpg", link: "https://drive.google.com/file/d/1iFXRw7FRCbM5ryu-X9-BktCGPgmrdVuj/view?usp=sharing" },
+      { id: "pb2", title: "Pictoblox Level 2", badge: "المستوى 2", image: "images/pictoblox-2.jpg", link: "https://drive.google.com/file/d/1F75X8CyQjeyAlaTIb5bszoMhwKI6wFV0/view?usp=sharing" }
     ]},
     { id: "a13", title: "المبرمج المحترف", badge: "13 سنة فأكثر", subtitle: "نتعلم Python من الصفر ونبني مشاريع حقيقية", image: "images/age-13.jpg", children: [
       { id: "py", title: "Python Programming", badge: "13+ سنة", image: "images/python.jpg", link: "https://drive.google.com/file/d/1qbwlUfIq4jWCLqhKjfqZW35WEZPADVI8/view?usp=drive_link" }
