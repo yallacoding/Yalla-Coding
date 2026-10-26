@@ -67,7 +67,7 @@ function card(n) {
   c.append(el('span', 'sp'));
   if (leaf) {
     const row = el('div', 'btns');
-    [['تفاصيل بالعربي', n.linkAr || n.link, '', 'قريبًا'], ['English Details', n.linkEn, ' alt', 'Soon']].forEach(([t, l, cls, soon]) => {
+    [['English Details', n.linkEn, ' alt', 'Soon'], ['تفاصيل بالعربي', n.linkAr || n.link, '', 'قريبًا']].forEach(([t, l, cls, soon]) => {
       const u = safeUrl(l), b = el('button', 'btn' + cls, u ? t : soon); b.type = 'button';
       if (!u) b.disabled = true; else b.onclick = () => window.open(u, '_blank', 'noopener');
       row.append(b);
