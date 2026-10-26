@@ -29,20 +29,20 @@ var siteConfig = {
 };
 
 /* كل عنصر: id (فريد) + title، واختياري: subtitle, badge, image, button
-   وإما children (مستوى جواه) أو link (لينك PDF/شيت/فورم). theme:"dark" لخلفية كحلي */
+   وإما children (مستوى جواه) أو linkAr (PDF عربي) + linkEn (PDF إنجليزي). theme:"dark" لخلفية كحلي */
 var coursesData = { courses: [
   
   { id: "prog", title: "كورسات البرمجة", subtitle: "من 6 سنوات لحد 13+", image: "images/prog.jpg", theme: "dark", children: [
     { id: "a69", title: "المبرمج الصغير", badge: "من 6 إلى 9 سنوات", subtitle: "نتعلم أساسيات البرمجة وصناعة الألعاب والقصص", image: "images/age-6-9.jpg", children: [
-      { id: "sc1", title: "Scratch Level 1", badge: "المستوى 1", image: "images/scratch-1.jpg", link: "https://drive.google.com/file/d/1ibyho5NKfq26TQ-lk5nePQPgliWlDf2o/view?usp=sharing" },
-      { id: "sc2", title: "Scratch Level 2", badge: "المستوى 2", image: "images/scratch-2.jpg", link: "https://drive.google.com/file/d/1HL07GXFz8cyVQzfajNwQ9jprJ5EWAU1N/view?usp=sharing" }
+      { id: "sc1", title: "Scratch Level 1", badge: "المستوى 1", image: "images/scratch-1.jpg", linkAr: "https://drive.google.com/file/d/1ibyho5NKfq26TQ-lk5nePQPgliWlDf2o/view?usp=sharing", linkEn: "" },
+      { id: "sc2", title: "Scratch Level 2", badge: "المستوى 2", image: "images/scratch-2.jpg", linkAr: "https://drive.google.com/file/d/1HL07GXFz8cyVQzfajNwQ9jprJ5EWAU1N/view?usp=sharing", linkEn: "" }
     ]},
     { id: "a1012", title: "المبرمج المبدع", badge: "من 10 إلى 12 سنة", subtitle: "نبني مشاريع تفاعلية بالبلوكات", image: "images/age-10-12.jpg", children: [
-      { id: "pb1", title: "Pictoblox Level 1", badge: "المستوى 1", image: "images/pictoblox-1.jpg", link: "https://drive.google.com/file/d/1iFXRw7FRCbM5ryu-X9-BktCGPgmrdVuj/view?usp=sharing" },
-      { id: "pb2", title: "Pictoblox Level 2", badge: "المستوى 2", image: "images/pictoblox-2.jpg", link: "https://drive.google.com/file/d/1F75X8CyQjeyAlaTIb5bszoMhwKI6wFV0/view?usp=sharing" }
+      { id: "pb1", title: "Pictoblox Level 1", badge: "المستوى 1", image: "images/pictoblox-1.jpg", linkAr: "", linkEn: "" },
+      { id: "pb2", title: "Pictoblox Level 2", badge: "المستوى 2", image: "images/pictoblox-2.jpg", linkAr: "", linkEn: "" }
     ]},
     { id: "a13", title: "المبرمج المحترف", badge: "13 سنة فأكثر", subtitle: "نتعلم Python من الصفر ونبني مشاريع حقيقية", image: "images/age-13.jpg", children: [
-      { id: "py", title: "Python Programming", badge: "13+ سنة", image: "images/python.jpg", link: "https://drive.google.com/file/d/1qbwlUfIq4jWCLqhKjfqZW35WEZPADVI8/view?usp=drive_link" }
+      { id: "py", title: "Python Programming", badge: "13+ سنة", image: "images/python.jpg", linkAr: "https://drive.google.com/file/d/1qbwlUfIq4jWCLqhKjfqZW35WEZPADVI8/view?usp=drive_link", linkEn: "" }
     ]}
   ]}
 ]};
