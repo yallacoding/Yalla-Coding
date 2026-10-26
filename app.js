@@ -65,11 +65,18 @@ function card(n) {
   c.append(el('h3', '', esc(n.title)));
   if (n.subtitle) c.append(el('p', 'sub', esc(n.subtitle)));
   c.append(el('span', 'sp'));
-  const hasLink = leaf && safeUrl(n.link);
-  const b = el('button', 'btn', leaf ? (hasLink ? esc(n.button || 'عرض تفاصيل PDF') : 'قريبًا') : 'استكشف'); b.type = 'button';
-  if (leaf && !hasLink) b.disabled = true;
-  c.append(b);
-  c.addEventListener('click', () => enter(n));
+  if (leaf) {
+    const row = el('div', 'btns');
+    [['تفاصيل بالعربي', n.linkAr || n.link, '', 'قريبًا'], ['English Details', n.linkEn, ' alt', 'Soon']].forEach(([t, l, cls, soon]) => {
+      const u = safeUrl(l), b = el('button', 'btn' + cls, u ? t : soon); b.type = 'button';
+      if (!u) b.disabled = true; else b.onclick = () => window.open(u, '_blank', 'noopener');
+      row.append(b);
+    });
+    c.append(row);
+  } else {
+    const b = el('button', 'btn', 'استكشف'); b.type = 'button'; c.append(b);
+    c.addEventListener('click', () => enter(n));
+  }
   return c;
 }
 
